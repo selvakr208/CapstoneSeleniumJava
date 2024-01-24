@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Swag Test Suite">
+
+	<test thread-count="5" name="Test">
+		<parameter name="validUsername" value="standard_user"></parameter>
+		<parameter name="validPassword" value="secret_sauce"></parameter>
+		<parameter name="inValidUsername" value="standard_Invaliduser"></parameter>
+		<parameter name="inValidPassword" value="secret_Invalidpwd"></parameter>
+		<classes>
+			
+			<class name="com.testcases.LoginPageTest"></class>
+			<class name="com.testcases.SearchPageTest"></class>
+			
+			
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
